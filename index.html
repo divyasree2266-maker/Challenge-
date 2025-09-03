@@ -1,0 +1,31 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vegetable Order Form</title>
+</head>
+<body>
+  <h1>Order Your Vegetables</h1>
+
+  <form action="/submit-order" method="POST">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="customer_name" required><br><br>
+
+    <label for="vegetable">Choose a vegetable:</label><br>
+    <select id="vegetable" name="vegetable" required>
+      <option value="">--Select--</option>
+      <option value="carrot">Carrot</option>
+      <option value="broccoli">Broccoli</option>
+      <option value="spinach">Spinach</option>
+      <option value="tomato">Tomato</option>
+      <option value="potato">Potato</option>
+    </select><br><br>
+
+    <label for="quantity">Quantity (kg):</label><br>
+    <input type="number" id="quantity" name="quantity" min="1" max="100" required><br><br>
+
+    <input type="submit" value="Place Order">
+  </form>
+</body>
+</html>
